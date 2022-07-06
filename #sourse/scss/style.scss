@@ -145,6 +145,7 @@ body{
         .title{margin-bottom: 18px;}
         .about__content {
             width: 485px;
+            @media (max-width:520px){width: 316px;}
             margin: 0 auto;
             &>*:not(:last-child){margin-bottom: 40px;}
             .contant__item {
@@ -159,25 +160,45 @@ body{
 }
 
 .skills {
-    padding-top: 91px;
+    padding: 91px 0 111px 0;
+    @media (max-width:767px){
+        padding: 50px 0 50px 0;
+    }
     .skills__container {
-        
-        .title{margin-bottom: 69px;}
+        .title{margin-bottom: 69px; @media (max-width:767px){
+            margin-bottom: 30px;
+        }}
         .subtitle {
             font-size: 18px;
             line-height: calc(22 / 18 * 100%);
             text-align: center;
             margin-bottom: 84px;
+            @media (max-width:767px){
+                margin-bottom: 40px;
+            }
         }
         .skills__content {
             display: flex;
-            & > *:not(:last-child){margin-right: 90px;}
+            flex-wrap: wrap;
+            @media (max-width:570px){
+               flex-direction: column;
+               & > .skills__column:last-child{margin-bottom:0px;}
+            }
+            margin: 0 -45px;
             .skills__column {
+                @media (max-width:992px){
+                    flex: 0 1 50%;
+                    margin-bottom: 80px;
+                }
+                @media (max-width:570px){
+                    flex: 0 1 100%;
+                }
+                padding: 0 45px;
                 flex: 0 1 25%;
                 .skills__item {
                     text-align: center;
                     .skills__icon {
-                        margin-bottom: 25px;
+                        margin-bottom: 27px;
                     }
                     .skills__text{
                         margin-bottom: 40px;
@@ -188,9 +209,11 @@ body{
                         font-size: bold;
                     }
                     .skills__estimation {
-
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        & >*:not(:last-child){margin-right: 9px;}
                         .estimation__item {
-
                         }
                     }
                 }

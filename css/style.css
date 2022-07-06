@@ -248,6 +248,11 @@ body {
   width: 485px;
   margin: 0 auto;
 }
+@media (max-width: 520px) {
+  .page__about .about__container .about__content {
+    width: 316px;
+  }
+}
 .page__about .about__container .about__content > *:not(:last-child) {
   margin-bottom: 40px;
 }
@@ -260,10 +265,20 @@ body {
 }
 
 .skills {
-  padding-top: 91px;
+  padding: 91px 0 111px 0;
+}
+@media (max-width: 767px) {
+  .skills {
+    padding: 50px 0 50px 0;
+  }
 }
 .skills .skills__container .title {
   margin-bottom: 69px;
+}
+@media (max-width: 767px) {
+  .skills .skills__container .title {
+    margin-bottom: 30px;
+  }
 }
 .skills .skills__container .subtitle {
   font-size: 18px;
@@ -271,24 +286,56 @@ body {
   text-align: center;
   margin-bottom: 84px;
 }
+@media (max-width: 767px) {
+  .skills .skills__container .subtitle {
+    margin-bottom: 40px;
+  }
+}
 .skills .skills__container .skills__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -45px;
 }
-.skills .skills__container .skills__content > *:not(:last-child) {
-  margin-right: 90px;
+@media (max-width: 570px) {
+  .skills .skills__container .skills__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills .skills__container .skills__content > .skills__column:last-child {
+    margin-bottom: 0px;
+  }
 }
 .skills .skills__container .skills__content .skills__column {
+  padding: 0 45px;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 25%;
           flex: 0 1 25%;
+}
+@media (max-width: 992px) {
+  .skills .skills__container .skills__content .skills__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 80px;
+  }
+}
+@media (max-width: 570px) {
+  .skills .skills__container .skills__content .skills__column {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
 }
 .skills .skills__container .skills__content .skills__column .skills__item {
   text-align: center;
 }
 .skills .skills__container .skills__content .skills__column .skills__item .skills__icon {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
 }
 .skills .skills__container .skills__content .skills__column .skills__item .skills__text {
   margin-bottom: 40px;
@@ -297,6 +344,20 @@ body {
   text-align: center;
   color: #828282;
   font-size: bold;
+}
+.skills .skills__container .skills__content .skills__column .skills__item .skills__estimation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.skills .skills__container .skills__content .skills__column .skills__item .skills__estimation > *:not(:last-child) {
+  margin-right: 9px;
 }
 .link {
   color: black !important;
