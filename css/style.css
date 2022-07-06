@@ -298,3 +298,63 @@ body {
   color: #828282;
   font-size: bold;
 }
+.swowcase {
+  width: 100%;
+}
+
+.swowcase-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0px;
+  width: 100%;
+  height: 300px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.swowcase-top__name {
+  font-size: 47.3392px;
+  line-height: 125.5319148936%;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+.swowcase-top__adres {
+  font-size: 18px;
+  line-height: 122.2222222222%;
+  font-weight: 600;
+}
+.swowcase-top__lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -23px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 20px;
+          flex: 0 1 20px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  font-size: 16px;
+  line-height: 125%;
+  font-weight: 700;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+.swowcase-top__lang a {
+  color: black;
+}
+
+.swowcase-botom {
+  width: 100%;
+  background: url("/img/showcase.png") center center/cover no-repeat;
+  height: 340px;
+}
