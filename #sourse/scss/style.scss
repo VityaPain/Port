@@ -75,6 +75,7 @@ body{
     }
 }
 
+
 .title {
     font-size: 34px;
     line-height: calc(42 / 34 * 100%);
@@ -197,6 +198,9 @@ body{
         }
     }
 }
+.link {
+    color: black !important;
+}
 
 //showcase
 .swowcase {
@@ -236,7 +240,7 @@ body{
             white-space: nowrap;
             box-sizing: content-box;
             a {               
-                color: black;
+                color: #828282;
             }
 		}
 }

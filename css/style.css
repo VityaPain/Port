@@ -298,6 +298,10 @@ body {
   color: #828282;
   font-size: bold;
 }
+.link {
+  color: black !important;
+}
+
 .swowcase {
   width: 100%;
 }
@@ -350,7 +354,7 @@ body {
           box-sizing: content-box;
 }
 .swowcase-top__lang a {
-  color: black;
+  color: #828282;
 }
 
 .swowcase-botom {
