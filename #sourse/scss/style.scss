@@ -74,11 +74,9 @@ body{
         object-fit: cover;
     }
 }
-
-
-
-
-
+.link {
+    color: black !important;
+}
 
 //showcase
 .swowcase {
@@ -118,7 +116,7 @@ body{
             white-space: nowrap;
             box-sizing: content-box;
             a {               
-                color: black;
+                color: #828282;
             }
 		}
 }
