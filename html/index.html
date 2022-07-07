@@ -10,43 +10,46 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <div class="header__container container">
-                <a href="№" class="header__logo">Home</a>
                 <nav class="menu header__menu">
                     <ul class="menu__list">
+                        <li class="list__item"><a href="#" class="menu__link active">Home</a></li>
                         <li class="list__item"><a href="#" class="menu__link">About me</a></li>
                         <li class="list__item"><a href="#" class="menu__link">Skills</a></li>
                         <li class="list__item"><a href="#" class="menu__link">Portfolio</a></li>
                         <li class="list__item"><a href="#" class="menu__link">Contacts</a></li>
                     </ul>
                 </nav>
+                <div class="lang-hidden">
+                    <p><span>RU</span> | ENG</p>
+                </div>
             </div>
         </header>
         <main class="main">
-
-            <div class="container">
-                <div class="swowcase">
-                    <div class="swowcase-top">
-                        <div class="swowcase-top__name">
-                            Denis <br>
-                            Novik
-                        </div>
-                        <div class="swowcase-top__adres">
-                            UX | UI designer <br>
-                            24 years old, Minsk
-                        </div>
-                        <div class="swowcase-top__lang">
-                            <a href="#">RU </a> | <a href="#" class="link"> ENG</a>
+            <div class="showcase">
+                <div class="showcase__container container">
+                    <div class="showcase__top">
+                        <div class="showcase__items">
+                            <div class="showcase__item showcase__item_name">Denis <br> Novik</div>
+                            <div class="showcase__item showcase__item_about">UX | UI designer <br> 24 years old, Minsk</div>
+                            <div class="showcase__item showcase__item_lang">
+                                <div class="rotate__lang">
+                                    <p><span>RU</span> | ENG</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="swowcase-botom">
-
+                    <div class="showcase__image _ibg">
+                        <img class="desctop" src="/img/BSPP2266.jpg" alt="showcase">
+                        <img class="mobile" src="/img/500.jpg" alt="showcase">
                     </div>
                 </div>
             </div>
-            <section class="page__image">
-                
-            </section>
             <section class="page__about about">
                 <div class="about__container container">
                     <h1 class="title">About me</h1>
@@ -117,10 +120,49 @@
                     </div>
                 </div>
             </section>
+            <section class="page__portfolio portfolio">
+                <div class="portfolio__container container">
+                    <h1 class="title">Portfolio</h1>
+                    <div class="portfolio__item">
+                        <div class="item__image">
+                            <a href="#" class="image__link _ibg"><img src="/img/portfolio/1.png" alt="portfolio"></a>
+                        </div>
+                        <div class="portfolio__label">Online fashion store - Homepage</div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="item__image">
+                            <a href="#" class="image__link _ibg"><img src="/img/portfolio/2.png" alt="portfolio"></a>
+                        </div>
+                        <div class="portfolio__label">Reebok Store - Concept</div>
+                    </div>
+                    <div class="portfolio__item">
+                        <div class="item__image">
+                            <a href="#" class="image__link _ibg"><img src="/img/portfolio/3.png" alt="portfolio"></a>
+                        </div>
+                        <div class="portfolio__label">Braun Landing Page - Concept</div>
+                    </div>
+                </div>
+            </section>
+            <section class="page__contacts contacts">
+                <div class="contacts__container container">
+                    <h1 class="title">Contacts</h1>
+                    <div class="subtitle">Want to know more or just chat? <br> You are welcome!</div>
+                    <a href="#" class="contacts__button">Send message</a>
+                    <div class="contacts__links">
+                        <div class="contacts__links-item"><img src="/img/contacts/1.svg" alt="contacts"></div>
+                        <div class="contacts__links-item"><img src="/img/contacts/2.svg" alt="contacts"></div>
+                        <div class="contacts__links-item"><img src="/img/contacts/3.svg" alt="contacts"></div>
+                        <div class="contacts__links-item"><img src="/img/contacts/4.svg" alt="contacts"></div>
+                    </div>
+                    <div class="label__contacts">Like me on <br>
+                        LinkedIn, Instagram, Behance, Dribble</div>
+                </div>
+            </section>
         </main>
         <footer class="footer">
 
         </footer>
     </div>
+    <script src="/js/script.js"></script>
 </body>
 </html>
